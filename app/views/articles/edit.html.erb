@@ -1,0 +1,9 @@
+<h2>Enter the quote new information</h2>
+<%= form_for(@article) do |f| %>
+  <%= f.label :philosopher %>
+  <%= f.text_field :title %>
+  <%= f.label :quote %>
+  <%= f.text_field :context %>
+  <%= f.submit %>
+<% end %>
+<%= link_to "Go back to the index", articles_path %>
